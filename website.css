@@ -1,11 +1,22 @@
+div
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 nav {
     position: fixed;
     width: 99%;
     z-index: 1;
-    
+  
 }
+
+@font-face {
+    font-family : 'Lobster-Regular';
+    src: url('lobster-regular-webfont.woff') format('woff');
+}
+
 nav ul {
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -63,7 +74,7 @@ table img {
 
 .t2{
     margin: 0 auto;
-    width:1000px;
+    width:1100px;
     text-align-last:center;
     color:#111;
 }
@@ -97,6 +108,10 @@ p {
     display: flex;
     text-align:center;
 }
+#k img{
+    border: 1px solid #111;
+    border-radius: 50%;
+}
 img {
     width:300px;
     height:300px;
@@ -112,5 +127,134 @@ img {
     width:40px;
     height:40px;
     margin-left:10px;
-    margin-top:26px
+    margin-top:26px;
+}
+
+#t3 {
+    margin: 0 auto;
+    width:1300px;
+    text-align-last:left;
+    color:#111;
+    
+}
+
+#t3 th {
+    font-size:medium;
+    width:960px;
+    background-color: #1e1e1e;
+    color: white;
+    border-bottom: 2px solid white;
+    border-left: 1px solid white;
+    font-weight: lighter;
+}
+
+#t3 td {
+    text-align-last: center;
+}
+
+form {
+	display: block;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 20px;
+	grid-column-gap: 10px;
+    margin-left:32%;
+    margin-right:32%;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+	border-color: #0066cc;
+	box-shadow: 0 0 5px #0066cc;
+	outline: none;
+}
+
+.error {
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	margin-top: 5px;
+}
+
+.radio-group {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.radio-group label {
+	margin-right: 10px;
+}
+
+button[type="submit"] {
+	padding: 10px;
+	background-color: #0066cc;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #0052a3;
+}
+
+label {
+    font-size: 26px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.testimonial img {
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.testimonial h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.testimonial p {
+  font-style: italic;
+  text-align:left;
+}
+
+h3 {
+    color: white;
+    text-align: right;
 }
